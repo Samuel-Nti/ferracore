@@ -76,27 +76,7 @@ export default function Hero() {
           </motion.button>
         </motion.div>
 
-        {/* Metrics */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.9 }}
-          className="mt-24 grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-4xl mx-auto"
-        >
-          {[
-            { value: "99.9%", label: "Uptime" },
-            { value: "50ms", label: "API Speed" },
-            { value: "BoG", label: "Compliant" },
-          ].map((stat, i) => (
-            <div
-              key={i}
-              className="p-8 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 shadow-md hover:shadow-lg transition text-center"
-            >
-              <div className="text-3xl font-bold text-gold mb-2">{stat.value}</div>
-              <div className="text-sm text-gray-300">{stat.label}</div>
-            </div>
-          ))}
-        </motion.div>
+       
       </div>
     </section>
   );
