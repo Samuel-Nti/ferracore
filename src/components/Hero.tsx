@@ -21,7 +21,7 @@ export default function Hero() {
         >
           <Sparkles size={16} className="text-gold" />
           <span className="text-gold text-xs sm:text-sm font-medium tracking-widest uppercase">
-            Built for Ghana’s Fintech Future
+            Digital Backbone of Ghanaian Financial Services
           </span>
         </motion.div>
 
@@ -32,9 +32,9 @@ export default function Hero() {
           transition={{ delay: 0.3 }}
           className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white mb-8 leading-tight"
         >
-          Banking-as-a-Service for{" "}
+          Strength at the Core of{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold via-amber-300 to-yellow-200">
-            Africa’s fintechs
+          Digital Finance
           </span>
         </motion.h1>
 
@@ -45,8 +45,9 @@ export default function Hero() {
           transition={{ delay: 0.5 }}
           className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto mb-14 leading-relaxed"
         >
-          Launch secure wallets, payments, and credit products — with compliance, 
-          trust, and developer-friendly APIs designed for speed.
+          ferraCore provides Banking-as-a-Service solutions
+          that helps financial and non-financial institutions offer financial solutions with speed, flexibility
+          and iron- clad reliability.
         </motion.p>
 
         {/* CTAs */}

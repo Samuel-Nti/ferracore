@@ -26,7 +26,7 @@ export default function Footer() {
               <span className="text-2xl font-bold">Ferracore</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Banking-as-a-Service infrastructure built for Ghana's fintech ecosystem. Compliant, scalable, and developer-friendly.
+              Strength at the Core of Digital Finance
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-white/10 hover:bg-gold/20 rounded-lg flex items-center justify-center transition-colors duration-200">

@@ -44,10 +44,11 @@ export default function Products() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">
-            Core Products
+            Comprehensive Solutions
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            Everything you need to build, launch, and scale fintech products in Ghana
+           Our API- driven modules cover the full spectrum of digitalfinacial services, enabling 
+           rapid deployment and seamless integration.
           </p>
         </div>
 
