@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0B1120] via-[#101c3a] to-[#0B1120] px-6 sm:px-10 lg:px-16 pt-28 pb-32">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#0B1120] via-[#101c3a] to-[#0B1120] px-6 sm:px-10 lg:px-16 pt-24 pb-32">
       {/* Background Glow */}
       <div className="absolute inset-0">
         <div className="absolute top-[-20%] left-[-15%] w-[500px] h-[500px] bg-gradient-to-tr from-gold/20 via-amber-400/10 to-yellow-200/20 rounded-full blur-[160px]" />
@@ -11,13 +11,13 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative max-w-5xl mx-auto text-center">
+      <div className="relative max-w-6xl mx-auto text-center">
         {/* Tagline */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="inline-flex items-center gap-2 px-6 py-2 bg-white/5 border border-white/10 rounded-full mb-8 backdrop-blur-md"
+          className="inline-flex items-center gap-2 px-6 py-2 bg-white/5 border border-white/10 rounded-full mb-10 backdrop-blur-md"
         >
           <Sparkles size={16} className="text-gold" />
           <span className="text-gold text-xs sm:text-sm font-medium tracking-widest uppercase">
@@ -30,7 +30,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white mb-6 leading-tight"
+          className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white mb-8 leading-tight"
         >
           Banking-as-a-Service for{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold via-amber-300 to-yellow-200">
@@ -43,7 +43,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-12 leading-relaxed"
+          className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto mb-14 leading-relaxed"
         >
           Launch secure wallets, payments, and credit products — with compliance, 
           trust, and developer-friendly APIs designed for speed.
@@ -54,7 +54,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.7 }}
-          className="flex flex-col sm:flex-row gap-5 justify-center items-center"
+          className="flex flex-col sm:flex-row gap-6 justify-center items-center"
         >
           <motion.button
             whileHover={{
@@ -62,14 +62,14 @@ export default function Hero() {
               boxShadow: "0 0 20px rgba(245,166,35,0.5)",
             }}
             whileTap={{ scale: 0.97 }}
-            className="px-8 py-4 bg-gradient-to-r from-gold via-amber-500 to-yellow-400 text-navy font-semibold rounded-xl shadow-md flex items-center gap-2"
+            className="px-10 py-4 bg-gradient-to-r from-gold via-amber-500 to-yellow-400 text-navy font-semibold rounded-2xl shadow-md flex items-center gap-2"
           >
             Get Started
-            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+            <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.05 }}
-            className="px-8 py-4 border border-white/30 text-white font-medium rounded-xl hover:bg-white/10 backdrop-blur-sm"
+            className="px-10 py-4 border border-white/30 text-white font-medium rounded-2xl hover:bg-white/10 backdrop-blur-sm"
           >
             Learn More
           </motion.button>
@@ -80,7 +80,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.9 }}
-          className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8"
+          className="mt-24 grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-4xl mx-auto"
         >
           {[
             { value: "99.9%", label: "Uptime" },
@@ -89,9 +89,9 @@ export default function Hero() {
           ].map((stat, i) => (
             <div
               key={i}
-              className="p-6 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 shadow-md hover:shadow-lg transition"
+              className="p-8 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 shadow-md hover:shadow-lg transition text-center"
             >
-              <div className="text-3xl font-bold text-gold mb-1">{stat.value}</div>
+              <div className="text-3xl font-bold text-gold mb-2">{stat.value}</div>
               <div className="text-sm text-gray-300">{stat.label}</div>
             </div>
           ))}
